@@ -7,6 +7,8 @@ The code uses the leapfrog integration method, constant time step and it also al
 - sys
 - os
 - numpy
+- struct
+- h5py
 - configparser
 - [python-unsiotools](https://pypi.org/project/python-unsiotools/)
 
