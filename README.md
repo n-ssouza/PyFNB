@@ -30,7 +30,7 @@ Notice that it doesn't make sense for both self and external gravities to be dea
   - The name of the parameters file can be anything as long as it ends with `.ini`
 
 # Initial Conditions
-For the moment, the code only accepts initial conditions' files following the scheme:
+For the moment, the code only accepts initial conditions files following the scheme:
 
 - It has to be a txt file
 - If self gravity is activated, then it has to contain 7 columns of data: `x, y, z, vx, vy, vz, masses`
