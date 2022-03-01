@@ -17,7 +17,7 @@ Make sure you edited this file according to your desire before you run a simulat
 In case external gravity is not activated, the parameters of the external potentials are useless, however there's no need no comment those lines. The same is true for self gravity, if it's not activated there's no need to comment the softening length parameter, for example.
 Notice that it doesn't make sense for both self and external gravities to be deactivated, if this happens the program raises an error and then it halts.
 
-Important note: the name of the parameters file can be anything as long as it ends with `.ini`
+**Important note:** the name of the parameters file can be anything as long as it ends with `.ini`
 
 # Initial Conditions
 For the moment, the code only accepts initial conditions' files following the scheme:
@@ -35,8 +35,8 @@ python3 PyFNB.py
 
 # Adding new external analytical potentials
 For now, the code only supports time independent external potentials. Those can be added this way: 
-  1. you need to write a new function at ``potentials.py`` which will return an array containing each particle's acceleration due to this new field. Keep in mind that accelation equal minus the gradient of the potential. 
-  2. Then you need to call this new function at ``acc.py`` and add these new accelerations into ``AccVectors``. The default shape of the array containing all the acceleration vectors is (N,3), where N is the number of particles.
+  1. You need to write a new function at ``potentials.py`` which will return an (N,3) array, where N is the number of particles, containing each particle's acceleration vector due to this new field. Keep in mind that accelation equal minus the gradient of the potential. 
+  2. Then you need to call this new function at ``acc.py`` and add these new accelerations into ``AccVectors``.
 
 
 
