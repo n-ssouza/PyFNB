@@ -6,7 +6,7 @@ The code uses the leapfrog integration method, constant time step and it also al
 The available output formats are: txt, GADGET-2 binary, HDF5. For the latter two, [Elvis Mello's](https://github.com/elvismello) version of [Rafael Ruggiero's](https://github.com/ruggiero) [``snapwrite.py``](https://github.com/elvismello/clustep/blob/master/clustep/snapwrite.py) from [clustep](https://github.com/elvismello/clustep) and [galstep](https://github.com/elvismello/galstep) is necessary. 
 
 This piece of software may be useful for those who want to run quick average to (why not) high resolution N-Body simulations which involve only the calculations of gravitational forces and, at the same time, don't want to bother using GADGET or some other more complex code for this type of simulation.
-Furthermore, this code's structure is very instructive and educational for those who want to start exploring the world of numerical simulations.
+Furthermore, this code's general structure is very instructive and educational for those who want to start exploring the world of numerical simulations.
 
 # Required libraries
 - os
