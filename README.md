@@ -12,8 +12,8 @@ Furthermore, this code's general structure is very instructive and educational f
 - os
 - sys
 - h5py
-- numpy
 - struct
+- numpy
 - configparser
 - [python-unsiotools](https://pypi.org/project/python-unsiotools/)
 
