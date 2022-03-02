@@ -54,7 +54,7 @@ For now, the code only supports time independent external potentials. Those can 
 # Examples
 This video was made from the outputs of a simulation where self gravity was deactivated. The initial conditions file used here is ``examples/ics/plummerForOnlyExtgrav.txt``
 
-![](examples/videos/plummerParallelOnlyExtgrav.mp4)
+![](./examples/videos/plummerParallelOnlyExtgrav.mp4)
 
 
 
