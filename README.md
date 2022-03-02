@@ -1,6 +1,6 @@
 # PyFNB
-PyFNB (Python + Falcon + N-Body) is an implementation of Jean-Charles Lambert's python wrapper of UNSIOTOOLS into a simple N-Body simulation code. 
-Hence, it uses Walter Dehnen's very fast falcON algorithm in order to compute gravitational accelerations.
+PyFNB (Python + Falcon + N-Body) is an implementation of [Jean-Charles Lambert's](https://gitlab.lam.fr/jclamber) python wrapper of UNSIOTOOLS into a simple N-Body simulation code. 
+Hence, it uses [Walter Dehnen's](https://zah.uni-heidelberg.de/service/personnel?tx_zahinfothek_staff%5Baction%5D=show&tx_zahinfothek_staff%5Buid%5D=658&cHash=277cfe5c25b7f290fa28555202c8aa8f) very fast falcON algorithm in order to compute gravitational accelerations.
 
 The code uses the leapfrog integration method, constant time step and it also allows for the addition of external analytical potentials.
 The available output formats are: txt, GADGET-2 binary, HDF5. For the latter two, [Elvis Mello's](https://github.com/elvismello) version of [Rafael Ruggiero's](https://github.com/ruggiero) [``snapwrite.py``](https://github.com/elvismello/clustep/blob/master/clustep/snapwrite.py) from [clustep](https://github.com/elvismello/clustep) and [galstep](https://github.com/elvismello/galstep) is necessary. 
