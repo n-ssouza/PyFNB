@@ -60,4 +60,4 @@ This other video represents the same scenario of the last one, but with self gra
 
 https://user-images.githubusercontent.com/73209038/156273526-b0cb8d98-9678-4409-9e6e-58430d115836.mp4
 
-
+For both examples, the parameters of the external analytical potentials are the same ones as in ``params.ini`` uploaded here.
