@@ -37,6 +37,7 @@ def newExtAcc(Data):
     # Analytical potentials: functions defined at potentials.py
     # you can add new lines here in order to add new external potentials,
     # just keep in mind that the actual acceleration = - grad(potential)
+    
     DiskAcc = - CartesianGradMNPotential(Md, A, B, PosVectors[:,0], PosVectors[:,1], PosVectors[:,2]) 
     HaloAcc = - CartesianGradHernquistPotential(Mh, a, PosVectors[:,0], PosVectors[:,1], PosVectors[:,2])
     
@@ -58,22 +59,10 @@ def newFalconAcc(Data):
     return GravAcc
 
 def newBothAcc(Data): 
-    PosVectors = Data[0]
-    Masses = Data[2]
-    cf = Data[3]
-    
-    # Analytical potentials: functions defined at potentials.py
-    # you can add new lines here in order to add new external potentials,
-    # just keep in mind that the actual acceleration = - grad(potential)
-    DiskAcc = - CartesianGradMNPotential(Md, A, B, PosVectors[:,0], PosVectors[:,1], PosVectors[:,2]) 
-    HaloAcc = - CartesianGradHernquistPotential(Mh, a, PosVectors[:,0], PosVectors[:,1], PosVectors[:,2]) 
-    
-    # Self gravity: uses UNSIOTOOLS getGravity method -- falcON algorithm
-    ok, GravAcc, phi = cf.getGravity(PosVectors.flatten(), Masses, eps, G, theta=theta)
-    GravAcc.shape = (int(len(GravAcc)/3), 3)
-    
-    # Add new accelations' arrays here
-    AccVectors = np.array(DiskAcc + HaloAcc + GravAcc)
+    ExtAcc = newExtAcc(Data)
+    SelfAcc = newFalconAcc(Data)
+   
+    AccVectors = np.array(ExtAcc + SelfAcc)
     
     return AccVectors
 
