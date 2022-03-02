@@ -51,7 +51,10 @@ For now, the code only supports time independent external potentials. Those can 
   1. You need to write a new function at ``potentials.py`` which will return an (N,3) array, where N is the number of particles, containing each particle's acceleration vector due to this new field. Keep in mind that accelation is equivalent to minus the gradient of the potential. 
   2. Then you need to call this new function at ``acc.py`` and add these new accelerations into ``AccVectors``, as it is done for the already available potentials.
 
+# Examples
+This video was made from the outputs of a simulation where self gravity was deactivated. The initial conditions file used here is ``examples/ics/plummerForOnlyExtgrav.txt``
 
+![](examples/videos/plummerParallelOnlyExtgrav.mp4)
 
 
 
