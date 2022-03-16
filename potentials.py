@@ -4,8 +4,8 @@ from configparser import ConfigParser
 
 '''
 Here we have the definitions of the available external analytical potentials.
-What is actually used are they Gradient functions, because in practice acceleration = - grad(potential)
-Feel free to add another functions as well as the new respective parameters into params.ini
+The Gradient functions are what is actually used, because in practice acceleration = - grad(potential)
+Feel free to add other functions as well as the new respective parameters into params.ini
 '''
 
 
